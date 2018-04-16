@@ -205,7 +205,7 @@ __Filter__
 
 Filter is used to take an array of items and based on some condition filter out items and get a new list back.
 
-```
+```javascript
 var result = [1, 2, 3, 4].filter(function(item) {
   return item !== 3;
 });
@@ -219,7 +219,7 @@ __Map__
 
 Map is used to take an array and transform it in some way.
 
-```
+```javascript
 var result = [1, 2, 3, 4].map(function(item) {
   return item * item;
 });
