@@ -10,7 +10,7 @@ Last week you learned about JavaScript. You used the language to write programs 
 
 ## Github Avatar Downloader
 
-Your first project will be a `nodejs` application that uses `http` to make requests to the github.com api. Some of these requests will ask the server for JSON formatted data. Other requests will ask the server for image files.
+Your first project will be a `nodejs` application that uses `http` to make requests to the github.com API. Some of these requests will ask the server for JSON formatted data. Other requests will ask the server for image files.
 
 [Github API Documentation](https://developer.github.com/v3/)
 
@@ -22,7 +22,7 @@ A request-response communication model is a good way to learn about protocols. T
 
 All the client needs is a way to ask and a thing to ask for. 'May I please have a cup of sugar?' might be better than 'Give me that sugar!'.
 
-A server can make a response. They can come back with the thing that was asked for. They could aslo come back and say 'I couldn't find that.' to the client.
+A server will make a response. They can come back with the thing that was asked for. They could aslo come back and say 'I couldn't find that.' to the client.
 
 ### Knock knock.
 
@@ -60,12 +60,12 @@ Some of the protocols that you may have heard of:
 
 ### Hyper Text Transfer Protocol
 
-HTTP will seem a lot more complicated than it is. It's the first protocol that you will learn. HTTP is used when one machine wants to share documents. Any number of clients can make requests on the documents whenever they wish. This is what happens when you type a URL into your browser.
+HTTP will seem a lot more complicated than it is. It's the first protocol that you will learn. HTTP is used when one machine wants to share documents. Any number of clients can make requests on these documents. This is what happens when you type a URL into your browser.
 
 HTTP:
 
 1. A Client connects to the server and transmits a request message.
-2. Server transmis a response message back to the client and disconnects.
+2. The Server transmits a response message back to the client and disconnects.
 
 ## Act One. The Client Request
 
@@ -102,14 +102,14 @@ When we are done adding headers to the message we use `\n\n` to indicate that we
 
 ### Methods
 
-Our goal today is to learn that the most common used request methods are `GET`, `POST`, `PUT`, `DELETE`. We don't need to go into detail on PUT and DELETE. The most simple way to put this:
+Our goal today is to learn that the most common used request methods are `GET`, `POST`, `PUT`, `DELETE`. We don't need to go into detail on PUT and DELETE. A simple way to put this:
 
 1. I use GET if I want to retrieve data from the server.
 2. I use POST if I want to add data to the server.
 
 __GET__
 
-A GET request is always a __safe__ operation. A server has the same state before and after when this type of requets is made.
+A GET request is always a __safe__ operation. A server has the same state before and after when this type of request is made.
 
 __POST__
 
@@ -166,7 +166,7 @@ Content-Length: 1270
 </html>
 ```
 
-A server response contains three parts. The status line, headers and body data. Skip the version and focus on two important parts. The status code (200) and the reason phrase (OK).
+A server response contains three parts. The status line, headers and body data. The status line is similar to the request line. Skip the version and focus on two important parts. The status code (200) and the reason phrase (OK).
 
 If example.com did not have a document to serve it could have started the response with `HTTP/1.1 404 Not Found`.
 
@@ -174,14 +174,14 @@ __Status Codes__
 
 Follow the same practice as with headers. Have a bookmark so you can quickly look this up. Learn the most common ones.
 
-200 OK
-301 Moved Permanently
-302 Found
-400 Bad Request
-401 Unauthorized
-403 Forbidden
-404 Not Found
-500 Internal Server Error
+- 200 OK
+- 301 Moved Permanently
+- 302 Found
+- 400 Bad Request
+- 401 Unauthorized
+- 403 Forbidden
+- 404 Not Found
+- 500 Internal Server Error
 
 ### Headers
 
@@ -195,7 +195,7 @@ From this information I can tell the date and time the message was created. I ca
 
 ### Content Body
 
-When sending a response the content body is usually a representation of the resource being asked for. This is how a document made of HTML, Image, JSON, JS, or CSS can be served.
+When sending a response the content body is usually a representation of the resource being asked for. This is how a document made up of HTML, Image, JSON, JS, or CSS can be served.
 
 ## Bonus
 
@@ -211,7 +211,7 @@ var result = [1, 2, 3, 4].filter(function(item) {
 });
 ```
 
-The function we provide to filter returns true for every item except '3'. The result will be a new array with the values `[1, 2, 4]`.
+The function we provide to filter returns true for every item except '3'. The '3' is filtered out. The result will be a new array with the values `[1, 2, 4]`.
 
 [MDN Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 
